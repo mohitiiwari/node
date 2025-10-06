@@ -1,0 +1,77 @@
+// import express from 'express'
+
+// const { json } = require("express");
+
+// const app = express()
+
+// app.get('/', (req, res) => {
+//     res.send('hotel')
+// })
+// app.get('/chicken',(req, res)=>{
+//     res.send('sure sir, i would love to serve chicken')
+// })
+// app.get('/idli',(req, res)=>{
+//     var customized_idli = {
+//         name: 'rava idli',
+//         size:'10 cm diameter',
+//         is_sambhar:true,
+//         is_chutney:false
+//     }
+//     res.send(customized_idli)
+// })
+
+
+// app.listen(3000, ()=>{
+//     console.log('listning to port 3000');
+    
+// })    
+
+// var fs = require('fs');
+// var os = require('os');
+
+// var user = os.userInfo();
+// console.log(user.username);
+
+// fs.appendFile('greeting.txt', 'hi ' + user.username + '!\n', ()=>{
+//     console.log('file is created');
+// });
+
+// console.log(fs);
+
+// const notes = require('./notes');
+// var _ = require('lodash')
+
+
+// console.log('server file is available');
+
+// var age = notes.age;
+// var result = notes.addNumber(age+18, 10);
+
+// console.log('result is now' +result);
+
+// var data = ["person", "person", 1, 2, 1, 2, 'name', 'age', '2'];
+// var filter = _.uniq(data);
+// console.log(filter);
+
+// console.log(_.isString(true));
+
+// const jsonString = '{"name": "john", "age": 31, "city":"New York"}';
+// const jsonObject = JSON.parse(jsonString); // json into an object in node js
+// console.log(jsonObject.name);
+
+//const objectToConvert = {
+//    name: "Alice", 
+//    age: 34
+//};
+//const json = JSON.stringify(objectToConvert); //object to json string
+//console.log(json);
+
+//console.log(typeof json);
+
+// cd "C:\Program Files\MongoDB\Server\8.2\bin"
+for starting local database
+2nd step  mongosh 
+for opening mongomap
+mongodb://127.0.0.1:27017
+
+ 
