@@ -1,10 +1,20 @@
 import mongoose from 'mongoose';
 // define the mongodb url
-const mongoURL = 'mongodb://localhost:27017/hotels';
+// const mongoURL = 'mongodb://localhost:27017/hotels';
+import dotenv from 'dotenv';
 
-mongoose.connect(mongoURL, { 
-    useNewUrlParser: true, 
-    useUnifiedTopology: true 
+dotenv.config();
+
+const mongoURL = process.env.MONGO_URI;
+
+console.log('MongoDB URI exists:', mongoURL ? 'Yes' : 'No');
+
+// Connect with error handling
+mongoose.connect(mongoURL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).catch(err => {
+    console.error('Initial connection error:', err);
 });
 
 //Get the default connection
